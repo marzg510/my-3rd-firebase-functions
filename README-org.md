@@ -39,3 +39,33 @@ firebaseの従量課金プランに入る必要あり
 ## Testing
 
 - https://firebase.google.com/docs/functions/unit-testing?hl=ja
+
+```bash
+cd functions
+npm install --save-dev firebase-functions-test
+npm install --save-dev mocha
+npm install --save-dev chai
+```
+
+
+```bash
+mkdir test
+touch test/index.test.js
+```
+
+functions/package.json
+
+```json
+"scripts": {
+  "test": "mocha --reporter spec"
+}
+```
+
+index.test.js
+```js
+```
+
+
+```bash
+npm test
+```
