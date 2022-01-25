@@ -7,3 +7,8 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs!", {structuredData: true});
   response.send("Hello from Firebase!");
 });
+
+const echo = require("./echo");
+exports.echo = echo.echo;
+const sample = require("./sample");
+exports.makeUppercase = sample.makeUppercase;

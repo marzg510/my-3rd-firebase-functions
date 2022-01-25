@@ -8,6 +8,7 @@
 ## create project
 
 ```bash
+npm install -g firebase-tools
 firebase init
 ```
 
@@ -69,3 +70,12 @@ index.test.js
 ```bash
 npm test
 ```
+
+
+## Run Local
+
+```bash
+firebase emulators:start
+```
+
+http://localhost:5001/my-3rd-firebase-functions/us-central1/helloWorld
